@@ -18,4 +18,5 @@ jobs:
             ${{ runner.os }}-gems-
       - uses: helaili/jekyll-action@v2    # Choose any one of the Jekyll Actions
         with:                                # Some relative inputs of your action
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.JEKYLL_PAT }}
+          target_branch: gh-pages
